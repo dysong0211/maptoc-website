@@ -374,7 +374,9 @@
 .e-card{padding:22px 18px}
 }
 
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}
+/* Stack the hero before the two-column layout becomes cramped in a half-width
+   desktop window or tablet landscape view. */
+@media(max-width:1080px){.hero-grid{grid-template-columns:1fr}
 .hero-visual{padding-top:0}
 .hero-caption-row{grid-template-columns:1fr;gap:10px}
 .hero-caption-row .visual-caption{margin-left:0}
