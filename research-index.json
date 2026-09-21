@@ -1,0 +1,200 @@
+[
+  {
+    "n": 1,
+    "title": "Beyond the final report: explaining program results",
+    "theme": "Outcome",
+    "file": "research/the-report-is-finished-can-we-explain-the-result.html"
+  },
+  {
+    "n": 2,
+    "title": "The hidden burden of repeated reporting",
+    "theme": "Research Findings",
+    "file": "research/why-do-teams-keep-rebuilding-the-same-answer.html"
+  },
+  {
+    "n": 3,
+    "title": "From program delivery to documented outcomes",
+    "theme": "Outcome",
+    "file": "research/what-happens-between-delivery-and-the-outcome.html"
+  },
+  {
+    "n": 4,
+    "title": "Staff turnover and the loss of program memory",
+    "theme": "Perspectives",
+    "file": "research/what-happens-to-program-memory-when-the-team-moves-on.html"
+  },
+  {
+    "n": 5,
+    "title": "Turning lessons into decisions",
+    "theme": "Perspectives",
+    "file": "research/how-does-a-lesson-reach-the-next-decision.html"
+  },
+  {
+    "n": 6,
+    "title": "Evidence integrity in AI-assisted research synthesis",
+    "theme": "Perspectives",
+    "file": "research/can-you-trace-an-ai-generated-claim-back-to-its-source.html"
+  },
+  {
+    "n": 7,
+    "title": "The limits of comparing unlike program indicators",
+    "theme": "Summaries",
+    "file": "research/can-you-compare-programs-that-count-different-things.html"
+  },
+  {
+    "n": 8,
+    "title": "Measuring the administrative cost of reporting",
+    "theme": "Perspectives",
+    "file": "research/what-should-matoc-prove-before-promising-time-savings.html"
+  },
+  {
+    "n": 9,
+    "title": "Aid budget cuts and the evidence needed to adapt",
+    "theme": "Research Findings",
+    "file": "research/when-aid-budgets-shrink-which-evidence-helps-teams-adapt.html"
+  },
+  {
+    "n": 10,
+    "title": "Monitoring, evaluation and learning: different functions, shared evidence",
+    "theme": "Summaries",
+    "file": "research/where-does-matoc-fit-alongside-existing-m-e-tools.html"
+  },
+  {
+    "n": 11,
+    "title": "Documenting the reasons for program adaptation",
+    "theme": "Field Chronicles",
+    "file": "research/when-should-a-program-change-its-mind.html"
+  },
+  {
+    "n": 12,
+    "title": "What a green dashboard can leave out",
+    "theme": "Field Chronicles",
+    "file": "research/what-is-a-green-dashboard-leaving-out.html"
+  },
+  {
+    "n": 13,
+    "title": "Examining implementation barriers before close-out",
+    "theme": "Research Findings",
+    "file": "research/why-wait-until-the-end-to-examine-implementation-barriers.html"
+  },
+  {
+    "n": 14,
+    "title": "Bringing local knowledge into the evidence record",
+    "theme": "Research Findings",
+    "file": "research/how-should-local-knowledge-sit-alongside-published-research.html"
+  },
+  {
+    "n": 15,
+    "title": "Do we question good news as carefully as bad news?",
+    "theme": "Research Findings",
+    "file": "research/do-we-question-good-news-as-carefully-as-bad-news.html"
+  },
+  {
+    "n": 16,
+    "title": "What evidence would justify a change of course?",
+    "theme": "Perspectives",
+    "file": "research/what-evidence-would-make-us-change-course.html"
+  },
+  {
+    "n": 17,
+    "title": "Before scaling a pilot: test the conditions for success",
+    "theme": "Outcome",
+    "file": "research/what-must-be-checked-before-scaling-a-successful-pilot.html"
+  },
+  {
+    "n": 18,
+    "title": "Who is missing from the program evidence?",
+    "theme": "Outcome",
+    "file": "research/who-is-missing-from-the-program-story.html"
+  },
+  {
+    "n": 19,
+    "title": "Closing the loop on program feedback",
+    "theme": "Field Chronicles",
+    "file": "research/what-happens-after-someone-gives-the-program-feedback.html"
+  },
+  {
+    "n": 20,
+    "title": "The learning value of disappointing results",
+    "theme": "Perspectives",
+    "file": "research/why-keep-the-findings-that-disappoint-us.html"
+  },
+  {
+    "n": 21,
+    "title": "When outcomes emerge after funding ends",
+    "theme": "Outcome",
+    "file": "research/what-if-the-outcome-arrives-after-the-grant-ends.html"
+  },
+  {
+    "n": 22,
+    "title": "The conditions behind a successful intervention",
+    "theme": "Summaries",
+    "file": "research/what-else-has-to-work-for-an-intervention-to-succeed.html"
+  },
+  {
+    "n": 23,
+    "title": "Recording the program that was actually delivered",
+    "theme": "Field Chronicles",
+    "file": "research/are-we-documenting-the-program-we-actually-delivered.html"
+  },
+  {
+    "n": 24,
+    "title": "Program knowledge needs shared ownership",
+    "theme": "Perspectives",
+    "file": "research/who-owns-program-memory-when-one-person-leaves.html"
+  },
+  {
+    "n": 25,
+    "title": "Making evidence useful at the point of decision",
+    "theme": "Summaries",
+    "file": "research/when-does-evidence-become-useful-to-a-decision.html"
+  },
+  {
+    "n": 26,
+    "title": "Why context must travel with program results",
+    "theme": "Summaries",
+    "file": "research/what-context-must-travel-with-a-program-result.html"
+  },
+  {
+    "n": 27,
+    "title": "Connecting delivery costs with the account of results",
+    "theme": "Outcome",
+    "file": "research/can-we-connect-delivery-costs-to-the-account-of-results.html"
+  },
+  {
+    "n": 28,
+    "title": "Changing targets without losing the original rationale",
+    "theme": "Perspectives",
+    "file": "research/what-changed-in-the-way-we-define-success.html"
+  },
+  {
+    "n": 29,
+    "title": "What the next funding cycle should inherit",
+    "theme": "Perspectives",
+    "file": "research/what-should-the-next-donor-inherit-besides-a-final-report.html"
+  },
+  {
+    "n": 30,
+    "title": "Using evidence between reporting deadlines",
+    "theme": "Perspectives",
+    "file": "research/is-your-program-record-useful-before-a-report-is-due.html"
+  },
+  {
+    "n": 31,
+    "title": "Global health evaluations: the evidence behind conclusions",
+    "theme": "Research Findings",
+    "file": "research/do-evaluation-reports-contain-the-evidence-their-conclusions-need.html"
+  },
+  {
+    "n": 32,
+    "title": "Simpler donor reporting and the work behind the template",
+    "theme": "Summaries",
+    "file": "research/can-simpler-donor-reporting-remove-repeated-work.html"
+  },
+  {
+    "n": 33,
+    "title": "Can evaluation serve accountability and learning equally?",
+    "theme": "Research Findings",
+    "file": "research/can-one-evaluation-serve-accountability-and-learning-equally-well.html"
+  }
+]

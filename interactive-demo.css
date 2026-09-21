@@ -1,0 +1,24 @@
+/* Shared interactive app embed for the homepage and Vision. */
+.vision-demo{background:#eaf3ef;color:var(--ink)}
+.vision-demo-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:24px}
+.vision-demo-heading p{font-size:17px;color:var(--muted);margin-top:12px}
+.vision-demo-open{flex:none;background:transparent;border:1px solid #478e76;color:#0a634e}
+.vision-demo-frame{border:1px solid #8caaa6;border-radius:12px;overflow:hidden;background:#f5f6f7;box-shadow:0 18px 45px #153c3112}
+.vision-demo-frame iframe{display:block;width:100%;height:min(760px,calc(100svh - 112px));border:0;scroll-margin-top:88px}
+.vision-demo-notes{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 20px;margin-top:14px}
+.vision-demo-notes p{font-size:12px;color:#4d6d62}
+.vision-demo-notes .chapter-link{margin-top:0}
+.demo-local-preview{background:#fff;border:1px solid #b5d2c5;border-radius:10px;padding:28px;scroll-margin-top:96px}
+.demo-local-preview h3{margin-top:12px;font-size:26px}
+.demo-local-preview p,.demo-local-preview ol{font-size:16px;line-height:1.6;color:var(--muted);margin-top:14px;max-width:850px}
+.demo-local-preview ol{padding-left:22px}
+.demo-local-preview li+li{margin-top:8px}
+.demo-local-preview strong{color:var(--ink)}
+.demo-local-preview .demo-local-detail{font-size:14px}
+.demo-local-preview code{font-size:inherit;background:#edf5f0;padding:2px 4px}
+@media(max-width:800px){.vision-demo-heading{align-items:flex-start;flex-direction:column;gap:16px}.vision-demo-frame iframe{height:min(700px,calc(100svh - 112px))}.vision-demo-heading p{font-size:15px}}
+@media(max-width:600px){.vision-demo{padding-block:30px}.vision-demo-frame{margin-inline:-18px;border-inline:0;border-radius:0}.vision-demo-frame iframe{height:min(680px,calc(100svh - 112px))}.vision-demo-heading h2{font-size:30px}}
+
+.vision-demo-heading h2{font-size:var(--section-title);line-height:1.12}
+.vision-demo .section-label,.vision-demo .eyebrow{color:var(--green)}
+.vision-demo .chapter-link{display:inline-flex;align-items:center;gap:12px;font-size:14px;font-weight:700;color:#087d61;border-bottom:1px solid #8ebfae;padding-bottom:5px;line-height:1.5}

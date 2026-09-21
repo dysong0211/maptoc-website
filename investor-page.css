@@ -1,0 +1,224 @@
+/* Investor narrative and concept visuals. Shared brand/navigation: site-system.css. */
+.investors-page{background:#f3f7f6}
+.investor-hero{padding:56px 0;background:linear-gradient(125deg,#06141d,#0c2a3a);color:white}
+.investor-hero-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);align-items:center;gap:44px}
+.investor-hero .eyebrow{color:var(--mint)}
+.investor-intro h1{font-size:clamp(42px,4.2vw,58px);line-height:1.07;margin-top:22px}
+.investor-intro>p{font-size:18px;line-height:1.6;color:#c1d4df;margin-top:23px}
+.investor-benefits{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}
+.investor-benefits span{font-size:13px;color:#aeebd8;border:1px solid #426b66;padding:6px 9px;border-radius:5px}
+.investor-intro .investor-status{font-size:12px;margin-top:18px;color:#9fbdc9}
+.investor-benefits span{font-size:12px}
+.vision-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px}
+.vision-hero-actions .text-link{color:var(--mint)}
+.investor-preview{min-width:0}
+.investor-preview .programme-screen{grid-template-columns:88px minmax(0,1fr)}
+.investor-preview .demo-evidence-record{display:none}
+.investor-preview .brand-name{font-size:20px}
+.investor-preview .brand-symbol{width:25px;height:27px}
+.investor-preview .brand-tagline{font-size:8px}
+.investor-preview .programme-demo{box-shadow:0 24px 60px #0003;border:1px solid #446574}
+.preview-caption{font-size:12px;color:#a7c4d0;margin-top:14px}
+.investors-page h2{max-width:860px;font-size:var(--section-title)}
+.investor-contrast{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.opportunity-deck{max-width:900px;margin-top:18px}
+.investor-contrast article{padding:28px;border:1px solid #cbdde2;border-radius:14px;background:white}
+.investor-contrast .contrast-after{background:#eaf8f1;border-color:#add9c8;border-top:4px solid #1caa80}
+.investor-contrast .contrast-before{background:#102b3b;color:white;border-color:#365360;border-top:4px solid #a7806b}
+.investor-contrast .contrast-before .eyebrow{color:#d8b5a0}
+.investor-contrast .contrast-before p{color:#c4d6df}
+.opportunity-status,.opportunity-brand{display:flex;align-items:center;gap:9px;border-bottom:1px solid #375363;padding-bottom:20px;margin-bottom:22px;min-height:55px;font-size:11px;font-weight:700;letter-spacing:.06em;color:#b8cbd5}
+.status-dot{height:8px;width:8px;border-radius:50%;background:#d9a887;box-shadow:0 0 0 4px #d9a88715}
+.opportunity-brand{justify-content:space-between;color:#087d61;border-color:#b7d9cb}
+.opportunity-brand .brand-lockup{color:#102b3b}
+.opportunity-brand .brand-name{font-size:25px}
+.opportunity-brand .brand-tagline{color:#527768;font-size:9px}
+.opportunity-brand .brand-symbol{width:28px;height:30px}
+.contrast-before .record-fragments span{background:#173747;color:#e2edf2;border:1px dashed #71828b}
+.contrast-before .record-fragments span:nth-child(2){transform:translateY(5px)}
+#investment-case h2{max-width:980px}
+.investor-contrast .eyebrow{font-size:12px}
+.investor-contrast h3{font-size:26px;line-height:1.2;margin-top:17px}
+.investor-contrast p{font-size:16px;color:var(--muted);line-height:1.6;margin-top:20px}
+.record-fragments,.linked-record{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:23px}
+.record-fragments span,.linked-record b{font-size:14px;font-weight:650;padding:9px 12px;background:#edf2f4;border:1px solid #dce6e9;border-radius:6px}
+.linked-record b{background:#d6f1e5;border-color:#b5ddcb;color:#195c49}
+.linked-record>span{color:#328368}
+.investor-dark{background:#081d2a;color:white}
+.investor-dark .section-label{color:var(--mint)}
+.edge-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.section-deck{font-size:17px;line-height:1.65;color:var(--muted);margin-top:23px;max-width:650px}
+.investor-dark .section-deck{color:#bed2dc}
+.edge-points{margin-top:25px}
+.edge-points>div{display:flex;gap:19px;padding:18px 0;border-top:1px solid #2e4c5a}
+.edge-points>div>span{font-size:13px;color:var(--mint);padding-top:3px}
+.edge-points p{font-size:15px;color:#bad0db}
+.edge-points b{display:block;font-size:20px;line-height:1.3;color:#f8fcfb;margin-bottom:6px}
+.investor-trace{border:1px solid #527382;border-radius:13px;overflow:hidden;background:#fff;color:var(--ink);box-shadow:0 20px 60px #0003}
+.trace-top{display:flex;align-items:center;justify-content:space-between;gap:15px;background:#112e3e;padding:19px 24px}
+.trace-top>span:last-child{font-size:11px;color:#b4d0d9;letter-spacing:.05em}
+.trace-top .brand-name{font-size:24px}
+.trace-content{padding:25px}
+.trace-amount{background:#123e3a;padding:20px 22px;border-radius:9px;color:#fff}
+.trace-amount>span{font-size:11px;font-weight:700;color:#b9e8d8;letter-spacing:.06em;display:block}
+.trace-amount strong{font-size:36px;line-height:1.2;display:block;margin:8px 0}
+.trace-amount small{font-size:12px;color:#bdddd2}
+.trace-timeline{list-style:none;margin:22px 0 22px 6px;padding:0 0 0 22px;border-left:2px solid #c1ddcf}
+.trace-timeline li{position:relative;margin-bottom:19px}
+.trace-timeline li:last-child{margin-bottom:0}
+.trace-timeline li::before{content:"";position:absolute;left:-29px;top:5px;width:12px;height:12px;border-radius:50%;border:3px solid #fff;background:#188260;box-shadow:0 0 0 1px #99c9b3}
+.trace-timeline span{display:block;font-size:11px;letter-spacing:.07em;font-weight:750;color:#176f56}
+.trace-timeline b{display:block;font-size:16px;font-weight:700;line-height:1.4;margin:4px 0}
+.trace-timeline small{font-size:12px;color:var(--muted)}
+.trace-gap{border:1px solid #e2d3b3;background:#fffbf0;border-radius:6px;padding:14px 17px}
+.trace-gap span{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;color:#795a22}
+.trace-gap b{font-size:16px;display:block;margin-top:5px}
+.investor-trace figcaption{font-size:12px;padding:13px 25px;background:#edf5f1;color:#55726b}
+.investor-note{font-size:13px;line-height:1.65;color:#5a7482;margin-top:26px;max-width:1050px}
+.vision-continuity{background:#eaf3ef}
+.continuity-intro p{max-width:850px;font-size:17px;line-height:1.6;color:var(--muted);margin-top:16px}
+.continuity-record{margin-top:28px;background:#fff;border:1px solid #b4cfc4;border-radius:12px;overflow:hidden;box-shadow:0 12px 35px #133e2b0a}
+.continuity-toolbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 26px;background:#102e3b;color:#fff;border-top:3px solid #2eb38b}
+.continuity-toolbar .eyebrow{font-size:10px;color:var(--mint)}
+.continuity-toolbar h3{font-size:22px;line-height:1.2;letter-spacing:-.02em;margin-top:7px}
+.continuity-status{font-size:10px;letter-spacing:.055em;color:#b7ddcf;border:1px solid #597e75;padding:5px 8px;border-radius:4px;white-space:nowrap}
+.continuity-stages{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:0;padding:26px}
+.continuity-stages li{min-width:0}
+.continuity-phase{display:flex;align-items:center;gap:9px;font-size:10px;font-weight:800;letter-spacing:.045em;color:#316459;position:relative}
+.continuity-phase::after{content:"";height:1px;flex:1;background:#bddacf}
+.continuity-phase i{width:10px;height:10px;flex:none;background:#1f9d78;border:2px solid #fff;outline:1px solid #78b59f;border-radius:50%}
+.continuity-stages li>div{border-left:1px solid #d1e4da;margin:14px 0 0 4px;padding:0 0 0 15px}
+.continuity-stages h4{font-size:21px;line-height:1.25;letter-spacing:-.025em}
+.continuity-stages p{font-size:15px;line-height:1.5;color:var(--muted);margin-top:6px}
+.continuity-source{display:inline-block;font-size:11px;font-weight:650;line-height:1.4;color:#2c6150;background:#eaf5ef;border:1px solid #c9e1d5;padding:5px 8px;border-radius:4px;margin-top:14px}
+.continuity-open{color:#755223;background:#fbf4e7;border-color:#e7d6b7}
+.continuity-history{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:0 26px;padding:16px 0;border-top:1px solid #d4e5de}
+.continuity-history>span{font-size:10px;font-weight:800;letter-spacing:.06em;color:#286451}
+.continuity-history>div{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:12px;color:#46695e}
+.continuity-history>div>span{display:flex;align-items:center;gap:6px}
+.continuity-history>div>span::before{content:"";width:4px;height:4px;background:#3a9c78;border-radius:50%}
+.continuity-record figcaption{font-size:12px;line-height:1.5;color:#4d6d62;background:#f1f7f3;padding:12px 26px}
+.continuity-uses{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:24px}
+.continuity-uses article{border-left:2px solid #89c5ad;padding-left:18px}
+.continuity-uses article>span{font-size:10px;font-weight:750;letter-spacing:.06em;color:#346f5c}
+.continuity-uses h3{font-size:23px;line-height:1.2;margin-top:8px}
+.continuity-uses p{font-size:15px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:480px}
+.investor-dark .investor-note{color:#a8c4d2}
+.business-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:55px;align-items:center}
+.adoption-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:27px}
+.adoption-path>div{border-top:2px solid #9ccfba;padding-top:16px}
+.adoption-path span{font-size:13px;color:var(--green);display:block;font-weight:750}
+.adoption-path b{display:block;font-size:17px;margin:6px 0}
+.adoption-path small{font-size:13px;color:var(--muted);line-height:1.5;display:block}
+.portfolio-visual{background:#e3f2eb;border:1px solid #b6d6c9;border-radius:14px;padding:27px}
+.portfolio-visual .eyebrow{font-size:12px}
+.portfolio-buyer{background:#123e3a;color:#fff;padding:22px;border-radius:9px;margin-top:24px;position:relative}
+.portfolio-buyer span{display:block;font-size:12px;color:#a9e0ca;letter-spacing:.06em}
+.portfolio-buyer b{display:block;font-size:22px;line-height:1.3;margin-top:8px}
+.portfolio-buyer::after{content:"";width:2px;height:24px;background:#8ebca8;position:absolute;left:50%;bottom:-24px}
+.portfolio-programs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:40px;position:relative}
+.portfolio-programs::before{content:"";position:absolute;left:16%;right:16%;top:-17px;border-top:2px solid #8ebca8}
+.portfolio-programs>div{position:relative;padding:17px 9px;background:#fff;border:1px solid #bcd6ca;border-radius:7px;text-align:center}
+.portfolio-programs>div::before{content:"";position:absolute;height:16px;border-left:2px solid #8ebca8;top:-17px;left:50%}
+.portfolio-programs b{display:block;font-size:15px}
+.portfolio-programs small{display:block;font-size:12px;color:var(--muted);margin-top:7px}
+.portfolio-visual figcaption{font-size:12px;color:#426e5b;margin-top:22px;text-align:center}
+.ask-header{display:flex;justify-content:space-between;align-items:center;gap:35px}
+.ask-header .button{flex:none}
+.investment-priorities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px;margin-top:33px}
+.investment-priorities article{border-top:1px solid #46636f;padding-top:22px}
+.investment-priorities article>span{font-size:12px;color:var(--mint);letter-spacing:.06em}
+.investment-priorities h3{font-size:24px;margin-top:13px}
+.investment-priorities p{font-size:16px;color:#c0d5de;margin-top:14px}
+.investor-dark .text-link{color:var(--mint);margin-top:16px}
+.chapter-link{display:inline-flex;align-items:center;gap:12px;font-size:14px;font-weight:700;color:#087d61;border-bottom:1px solid #8ebfae;padding-bottom:5px;margin-top:24px;line-height:1.5}
+.chapter-link:hover{color:#04543f;border-color:currentColor}
+.investor-dark .chapter-link{color:var(--mint);border-color:#497b70}
+.vision-action{background:#e5f2ec}
+.vision-action-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:70px;align-items:start}
+.vision-action-grid h2{font-size:var(--section-title);line-height:1.08;max-width:700px}
+.vision-action-grid>div>p{font-size:17px;line-height:1.65;color:#4f6872;margin-top:24px;max-width:670px}
+.vision-action-grid ul{list-style:none;margin:0;padding:0;border-top:1px solid #a9cabd}
+.vision-action-grid li{position:relative;padding:15px 8px 15px 30px;border-bottom:1px solid #bdd7cc;font-size:15px;line-height:1.5;color:#183d38}
+.vision-action-grid li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:#169675;box-shadow:0 0 0 4px #16967514}
+
+@media(max-width:1100px){.investor-hero-grid{gap:30px;grid-template-columns:1fr 1.2fr}
+.investor-preview .programme-screen{grid-template-columns:1fr}
+.investor-preview .programme-sidebar{display:none}
+.edge-layout{gap:35px}
+.business-layout{gap:30px}
+.portfolio-visual{padding:22px}
+}
+
+@media(max-width:800px){.investor-hero-grid,.edge-layout,.business-layout{grid-template-columns:1fr;gap:32px}
+.vision-action-grid{grid-template-columns:1fr;gap:30px}
+.investor-hero{padding:40px 0}
+.investor-intro h1{font-size:48px}
+.investor-preview .programme-screen{grid-template-columns:90px minmax(0,1fr)}
+.investor-preview .programme-sidebar{display:flex}
+.investor-contrast{gap:16px}
+.investor-contrast article{padding:23px}
+.investor-contrast h3{font-size:24px}
+.investment-priorities{gap:20px}
+.investment-priorities h3{font-size:21px}
+.ask-header{align-items:start;flex-direction:column;gap:25px}
+.continuity-toolbar{padding:18px}
+.continuity-stages{gap:18px;padding:20px 18px}
+.continuity-history{margin-inline:18px;align-items:flex-start;flex-direction:column;gap:10px}
+}
+
+@media(max-width:600px){.investor-intro h1{font-size:42px}
+.investor-intro>p{font-size:17px}
+.investor-contrast,.investment-priorities{grid-template-columns:1fr}
+.vision-continuity{padding-block:30px}
+.continuity-intro h2{font-size:30px}
+.continuity-intro p{font-size:15px;line-height:1.5;margin-top:12px}
+.continuity-record{margin-top:20px}
+.continuity-toolbar{padding:14px;gap:10px}
+.continuity-toolbar h3{font-size:18px}
+.continuity-status{font-size:9px;max-width:76px;white-space:normal;text-align:center;line-height:1.5}
+.continuity-stages{grid-template-columns:1fr;gap:0;padding:0 14px}
+.continuity-stages li{display:grid;grid-template-columns:95px minmax(0,1fr);gap:14px;position:relative;padding:14px 0}
+.continuity-stages li+li{border-top:1px solid #e0ece6}
+.continuity-phase{align-self:start;align-items:flex-start;font-size:9px;line-height:1.5;letter-spacing:.01em;padding-top:3px;gap:7px}
+.continuity-phase i{margin-top:2px;width:8px;height:8px}
+.continuity-phase::after{display:none}
+.continuity-stages li>div{border:0;margin:0;padding:0}
+.continuity-stages h4{font-size:17px}
+.continuity-stages p{font-size:13px;line-height:1.4;margin-top:4px}
+.continuity-source{margin-top:8px;font-size:10px;padding:4px 6px}
+.continuity-history{margin-inline:14px;padding:12px 0;gap:6px}
+.continuity-history>span{font-size:9px}
+.continuity-history>div{font-size:10px;gap:6px 12px}
+.continuity-record figcaption{padding:10px 14px;font-size:11px}
+.vision-action{padding-block:30px}
+.vision-action-grid{gap:20px}
+.vision-action-grid h2{font-size:30px}
+.vision-action-grid>div>p{font-size:14px;line-height:1.5;margin-top:14px}
+.vision-action-grid li{font-size:13px;line-height:1.4;padding:11px 4px 11px 24px}
+.vision-action-grid li::before{left:2px;top:17px;width:7px;height:7px}
+.continuity-uses{gap:14px;margin-top:18px}
+.continuity-uses article{padding-left:10px}
+.continuity-uses article>span{font-size:9px;letter-spacing:0}
+.continuity-uses h3{font-size:18px;line-height:1.2;margin-top:5px}
+.continuity-uses p{font-size:13px;line-height:1.4;margin-top:6px}
+.investor-preview .programme-screen{grid-template-columns:1fr}
+.investor-preview .programme-sidebar,.investor-preview .demo-map-panel,.investor-preview .demo-search-label{display:none}
+.investor-preview .demo-panels{grid-template-columns:1fr}
+.investor-preview .demo-avatar{margin-left:auto}
+.investor-preview .demo-feed b{font-size:12px}
+.investor-preview .demo-feed p{font-size:11px!important}
+.investor-preview .demo-feed small{font-size:10px}
+.investor-preview .demo-feed article{padding:10px}
+.investor-preview .programme-demo h4{font-size:13px}
+.adoption-path{gap:12px}
+.adoption-path b{font-size:15px}
+.adoption-path small{font-size:12px}
+.portfolio-visual{padding:20px}
+.portfolio-programs{gap:7px}
+.portfolio-programs b{font-size:13px}
+.portfolio-programs small{font-size:11px}
+.trace-top{padding:18px}
+.trace-content{padding:20px}
+.trace-top>span:last-child{font-size:10px}
+}
