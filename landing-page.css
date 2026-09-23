@@ -863,3 +863,77 @@ color:#6b7280;
  #why-matoc .accountability-grid{row-gap:20px}
  #why-matoc .accountability-link{margin-top:12px}
 }
+
+/* Mobile reading rhythm: one focused block at a time, with 24px side gutters. */
+@media(max-width:700px){
+ .landing-page .hero{padding:24px 0 28px}
+ .hero-copy{max-width:none}
+ .hero .eyebrow{font-size:11px;line-height:1.5;letter-spacing:.065em}
+ .hero h1{font-size:clamp(38px,11.7vw,48px);line-height:1.03;margin-top:20px;letter-spacing:-.045em}
+ .hero h1 span{display:inline}
+ .hero-intro{font-size:16px;line-height:1.55;margin-top:26px}
+ .hero-benefits{font-size:18px;line-height:1.5;margin-top:32px}
+ .hero .buttons{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px;margin-top:32px;align-items:stretch}
+ .hero .buttons .button,.hero .buttons .text-link{font-size:13px;line-height:1.25;padding:12px 8px;min-width:0;min-height:46px;gap:7px;white-space:nowrap}
+ .hero .buttons .link-arrow{width:16px;height:16px;flex-basis:16px}
+ .hero-final{font-size:13px;line-height:1.5;margin-top:10px}
+ .hero-grid{row-gap:40px}
+ .landing-page .section{padding-block:28px}
+ .landing-page .section-heading h2,.landing-page .section-head h2{font-size:25px;line-height:1.14}
+ .landing-page .section-label{margin-bottom:12px}
+ #problem .solution-note{margin:12px 0 16px}
+ #problem .story-panel{padding:9px;row-gap:3px}
+ #problem .story-toolbar{margin:-9px -9px 6px;padding:7px 9px;min-height:36px}
+ #problem .story-toolbar .record-state{font-size:10px}
+ #problem .story-toolbar .brand-name{font-size:17px}
+ #problem .story-quote{font-size:12px;line-height:1.3;margin:6px 0}
+ #problem .story-kicker{font-size:10px;letter-spacing:.01em}
+ #problem .story-flow{row-gap:3px}
+ #problem .story-flow span{font-size:11px;line-height:1.25;min-height:32px;padding:5px 3px}
+ #problem .story-flow i::after{font-size:14px}
+ #problem .story-keywords{margin-top:8px;row-gap:3px}
+ #problem .story-keywords span{font-size:11px;line-height:1.4}
+ #proof .section-head{margin-bottom:16px}
+ #proof .audit-heading{margin-top:16px;gap:8px}
+ #proof .evidence-grid{gap:10px}
+ #proof .e-card{padding:11px}
+ #proof .e-question{font-size:11px;line-height:1.3}
+ #proof .e-num{font-size:30px;line-height:1.2}
+ #proof .e-card p{font-size:12px;line-height:1.3}
+ #proof .source-caption{font-size:11px;line-height:1.45;margin-top:12px}
+ #home-product .product-heading{margin-top:16px;margin-bottom:18px}
+ #home-product .product-panel{padding-block:24px}
+ #home-product .feature-section-label{margin-bottom:12px}
+ #home-product .demo-copy h3{font-size:26px;line-height:1.14}
+ #home-product .product-demo{padding:18px 14px}
+ #home-product .capture-layout,#home-product .feature-demo{gap:12px}
+ #panel-evidence .source-document blockquote{font-size:13px;line-height:1.4}
+ #panel-evidence .extract-card{padding:8px}
+ #panel-evidence .extract-card b{font-size:13px;line-height:1.3}
+ #panel-evidence .extract-card span{font-size:10px;line-height:1.3}
+ #home-evidence-pathway .outcome-inspector p{font-size:12px}
+ #why-matoc{padding-block:24px}
+ #why-matoc .section-heading h2{font-size:23px;line-height:1.16}
+ #why-matoc .accountability-grid{gap:20px 16px}
+ #why-matoc>.container>.section-insight{margin-bottom:20px}
+ #home-network .resource-links>a{padding:14px;grid-template-columns:1fr;gap:6px}
+ #home-network .resource-links h3{font-size:20px}
+ #home-network .resource-action{margin-top:0}
+ #home-network .resource-links .eyebrow{font-size:10px}
+ #contact{padding-block:28px}
+}
+@media(max-width:360px){
+ .hero .buttons{gap:8px;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr)}
+ .hero .buttons .button,.hero .buttons .text-link{font-size:11px;padding-inline:5px;gap:5px}
+ .hero-intro{font-size:15px}
+ .hero-benefits{font-size:17px}
+}
+@media(max-width:700px) and (max-height:740px){
+ .landing-page .hero{padding-top:20px}
+ .hero h1{margin-top:16px;font-size:clamp(36px,10.7vw,43px)}
+ .hero-intro{margin-top:20px}
+ .hero-benefits,.hero .buttons{margin-top:24px}
+ .landing-page .section{padding-block:22px}
+ #why-matoc{padding-block:20px}
+ #why-matoc .accountability-grid{row-gap:18px}
+}
