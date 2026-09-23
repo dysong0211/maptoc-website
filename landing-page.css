@@ -48,6 +48,7 @@
 .hero-visual .programme-sidebar>p{padding:5px 6px}
 .hero-visual .programme-sidebar .demo-sidebar-foot{padding-top:10px}
 }
+
 .demo-wordmark .brand-lockup .brand-name{font-size:19px}
 .demo-wordmark .brand-lockup .brand-symbol{width:24px;height:26px}
 .demo-wordmark .brand-lockup .brand-tagline{font-size:8px}
@@ -936,4 +937,73 @@ color:#6b7280;
  .landing-page .section{padding-block:22px}
  #why-matoc{padding-block:20px}
  #why-matoc .accountability-grid{row-gap:18px}
+}
+
+/* Context additions retain the existing visual hierarchy. */
+.hero-benefits,.hero .buttons{margin-top:24px}
+#problem .problem-context{font-size:17px;line-height:1.55;max-width:850px;margin-top:18px;font-weight:400}
+.product-section .product-heading{grid-template-columns:1fr;gap:12px;align-items:start;margin-bottom:20px}
+.product-section .product-heading>p{margin:0;max-width:850px}
+.capture-headline{font-size:clamp(28px,3vw,42px);line-height:1.15;letter-spacing:-.025em;margin:18px 0 14px}
+#home-workflow .demo-copy>p.section-insight{display:block;font-size:17px;line-height:1.5;font-weight:400;color:#a8bec9;margin:16px 0 20px}
+.program-context{padding:14px 0 18px;border-bottom:1px solid #294550;margin-bottom:8px}
+.program-context .eyebrow{color:#8ce6ca;font-size:11px;letter-spacing:.08em}
+.program-context p{font-size:15px;line-height:1.5;color:#b9d1da;margin-top:6px;max-width:900px}
+#home-evidence-pathway .demo-copy>p.section-insight{display:block;font-size:17px;line-height:1.5;font-weight:400;color:#a8bec9;margin:16px 0 20px}
+.founder-note{border-bottom:1px solid #34515b;padding-bottom:24px;margin-bottom:28px;display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:36px;row-gap:10px}
+.founder-note .eyebrow{color:#8ce6ca;font-size:11px;line-height:1.5}
+.founder-note>p{font-size:15px;line-height:1.6;color:#bfd2da;max-width:850px}
+.founder-note .founder-attribution{grid-column:2;font-size:13px;font-weight:650;color:#f5faf8}
+.founder-attribution span{font-weight:400;color:#a8bec9;margin-left:10px}
+@media(max-width:1080px){
+ .product-section .product-heading{grid-template-columns:1fr;gap:12px}
+ .product-section .product-heading>p{max-width:680px}
+}
+@media(max-width:700px){
+ #problem .problem-context{font-size:14px;line-height:1.45;margin-top:12px}
+ .product-section .product-heading{gap:10px;margin-bottom:12px}
+ .product-section .product-heading h2 br{display:none}
+ .product-section .product-heading>p{display:block;font-size:14px;line-height:1.45;margin-top:0}
+ .program-context{padding:8px 0 14px;margin-bottom:0}
+ .program-context .eyebrow{font-size:10px}
+ .program-context p{font-size:12px;line-height:1.45;margin-top:5px}
+ #home-evidence-pathway .demo-copy>p.section-insight{font-size:14px;line-height:1.45;margin:10px 0 0}
+ .founder-note{display:none}
+ .capture-headline{font-size:26px;margin:14px 0 10px}
+ #home-workflow .demo-copy>p.section-insight{font-size:14px;line-height:1.45;margin:10px 0 18px}
+ .founder-note>p{font-size:14px;line-height:1.45;margin-top:8px}
+ .founder-note .founder-attribution{font-size:12px;margin-top:10px}
+ .landing-page .audience-line{display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.5;padding-block:12px;margin-top:20px}
+ .audience-line>span{font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+ .audience-line i{padding-inline:4px}
+ #home-network .section-heading p{font-size:14px;line-height:1.45;margin-top:10px}
+}
+
+/* Product introduction: editorial typography with a restrained brand lockup. */
+.product-section .product-heading{
+ background:none;
+ border:0;
+ border-radius:0;
+ padding:0;
+ margin-top:26px;
+ margin-bottom:44px;
+}
+.product-intro-copy{
+ display:grid;
+ grid-template-columns:auto minmax(0,1fr);
+ gap:30px;
+ align-items:center;
+}
+.product-intro-brand{gap:9px;align-self:center}
+.product-intro-brand .brand-symbol{width:38px;height:41px}
+.product-intro-brand .brand-type{gap:4px}
+.product-intro-brand .brand-name{font-size:26px}
+.product-intro-brand .brand-tagline{font-size:10px}
+.product-section .product-heading h2{margin:0;max-width:890px}
+.product-section .product-heading>p{margin:13px 0 0 46px;max-width:700px}
+@media(max-width:700px){
+ .product-section .product-heading{margin-top:20px;margin-bottom:40px}
+ .product-intro-copy{grid-template-columns:1fr;gap:16px}
+ .product-intro-brand{margin-bottom:2px}
+ .product-section .product-heading>p{margin:9px 0 0;max-width:100%}
 }
