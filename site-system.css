@@ -68,14 +68,16 @@ footer a{color:var(--mint)}
 .unified-nav .navlinks.is-open{display:flex}
 }
 
-@media(max-width:700px){.container,.unified-nav .nav-inner{width:calc(100% - 36px)}
+@media(max-width:700px){.container,.unified-nav .nav-inner{width:calc(100% - 48px)}
 .section{padding:48px 0}
 .section-label{margin-bottom:22px;font-size:12px}
 .section-heading{margin-bottom:26px}
-.unified-nav .navlinks{padding:20px 18px}
+.unified-nav .navlinks{padding:20px 24px}
 .brand-lockup .brand-name{font-size:25px}
 .brand-lockup .brand-symbol{width:29px;height:31px}
 .button,.text-link{font-size:14px}
+.docs-layout,.docs-mobile{padding-left:24px;padding-right:24px}
+.source-notes{width:calc(100% - 48px)}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}

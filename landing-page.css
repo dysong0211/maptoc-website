@@ -839,5 +839,27 @@ color:#6b7280;
 @media(max-width:1080px){.hero-app-frame{width:100%;transform:none}}
 @media(max-width:700px){
  .hero-app-frame{display:none}
- .landing-page .hero-visual{display:none}
+ .landing-page .hero-visual{display:block}
+}
+
+/* Mobile Why MapToc: move space inside the section, where it aids scanning. */
+@media(max-width:700px){
+ #why-matoc{padding-block:24px}
+ #why-matoc .section-heading{margin-bottom:16px}
+ #why-matoc .section-heading .section-label{margin-bottom:12px}
+ #why-matoc .section-heading h2{font-size:23px;line-height:1.16;margin-top:0}
+ #why-matoc>.container>.section-insight{font-size:14px;line-height:1.45;margin:0 0 24px}
+ #why-matoc .accountability-row{margin:0}
+ #why-matoc .accountability-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px}
+ #why-matoc .accountability-grid article{padding-top:13px}
+ #why-matoc .accountability-grid .feature-index{font-size:9.5px;line-height:1.35;letter-spacing:0}
+ #why-matoc .accountability-grid h4{font-size:16px;line-height:1.25;margin-top:10px}
+ #why-matoc .accountability-grid .feature-footer{font-size:10px;line-height:1.5;letter-spacing:0;padding-top:12px;margin-top:auto}
+ #why-matoc .accountability-link{font-size:12px;line-height:1.4;min-height:44px;margin-top:16px;gap:10px}
+}
+@media(max-width:700px) and (max-height:740px){
+ #why-matoc{padding-block:20px}
+ #why-matoc>.container>.section-insight{margin-bottom:20px}
+ #why-matoc .accountability-grid{row-gap:20px}
+ #why-matoc .accountability-link{margin-top:12px}
 }
