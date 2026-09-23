@@ -105,18 +105,11 @@
 .story-new .story-flow span{background:#d9f4e9}
 .story-flow i{font-style:normal;color:#698795}
 .story-panel p{font-size:16px;line-height:1.55;margin-top:16px}
-.story-panel .story-keywords{gap:3px 18px;margin-top:16px}
-.story-panel .story-keywords span{font-size:14px;color:#0b664f}
+.story-panel .story-keywords{display:block;margin-top:16px;font-size:14px;line-height:1.4}
+.story-panel .story-keywords span{display:inline;font-size:14px;line-height:1.4;color:#5d7079}
+.story-panel .story-keywords span:not(:last-child)::after{content:" "}
+.story-new .story-keywords span{color:#0b664f;font-weight:700}
 .story-arrow{display:grid;place-items:center;color:#7795a1;font-size:30px}
-.paired-comparison{grid-column:1/-1;border:1px solid #c9dbd7;border-radius:10px;overflow:hidden;background:#fff;margin-top:2px}
-.paired-comparison>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-.paired-comparison>div+div{border-top:1px solid #dce7e3}
-.paired-comparison span,.paired-comparison strong{padding:9px 14px;font-size:13px;line-height:1.35}
-.paired-comparison span{color:#5d7079;background:#f7f9fa;font-weight:500}
-.paired-comparison strong{color:#09694f;background:#effaf5;border-left:1px solid #d4e9df;font-weight:700}
-.paired-comparison .paired-heading span{font-size:10px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#59717c}
-.paired-comparison .paired-heading span:last-child{color:#087458;background:#e3f5ed;border-left:1px solid #c8e6da}
-
 #proof{background:#eaf3ef;color:var(--ink);padding:32px 0}
 #proof .section-label{margin-bottom:14px}
 #proof .section-head p{font-size:16px;max-width:960px;margin-top:14px;color:var(--muted)}
@@ -205,6 +198,7 @@
 .demo-copy .eyebrow{margin-bottom:18px}
 .demo-copy h3{font-size:var(--section-title);line-height:1.1}
 .demo-copy p{font-size:17px;line-height:1.65;color:#bdd0d9;margin-top:22px}
+.demo-copy .section-insight{font-size:14px;line-height:1.5;font-weight:400;margin:12px 0 0}
 .demo-copy .small-note{font-size:12px}
 .plain-points{list-style:none;padding:0;display:grid;gap:12px;margin:22px 0 0;font-size:16px;color:#c7dce0}
 .plain-points li{padding-left:17px;position:relative}
@@ -413,9 +407,10 @@
 .hero .buttons{margin-top:40px;gap:18px}
 .hero .buttons .button,.hero .buttons .text-link{font-size:14px}
 .hero-visual .programme-demo{display:none}
-/* Phones use the dedicated Demo link, without a cropped hero preview. */
-.hero-visual{display:none}
-.mobile-hero-app{display:none}
+/* Phones use a static app view in the hero; the embedded demo stays excluded. */
+.hero-visual{display:block;margin-top:0}
+.hero-grid{row-gap:40px}
+.mobile-hero-app{display:block;width:100%;height:auto;max-height:none;border:1px solid #78929b;border-radius:12px;background:#f5f8f7;box-shadow:0 18px 44px #0003}
 .hero-visual .programme-screen{grid-template-columns:1fr}
 .hero-visual .programme-sidebar,.hero-visual .demo-evidence-record,.hero-visual .demo-map-panel,.hero-visual .demo-search-label{display:none}
 .hero-visual .demo-avatar{margin-left:auto}
@@ -436,7 +431,7 @@
 #proof .section-label{margin-bottom:6px}
 #proof .section-head h2{font-size:27px;line-height:1.04}
 #proof .section-head p{display:none}
-#proof .section-head .section-insight{display:block;font-size:12px;line-height:1.4;margin:8px 0 0}
+#proof .section-head .section-insight{display:block;font-size:14px;line-height:1.5;margin:8px 0 0}
 #proof .audit-heading{display:grid;grid-template-columns:1fr auto;align-items:end;gap:8px;margin:9px 0 7px}
 #proof .evidence-tag{font-size:10px}
 #proof .audit-heading h3{font-size:17px;line-height:1.1;margin-top:3px}
@@ -505,7 +500,7 @@
 .hero-intro{font-size:15px;line-height:1.45;margin-top:18px}
 .hero-benefits{font-size:16px;line-height:1.45;margin-top:18px}
 .hero .buttons{margin-top:40px;gap:10px}
-.mobile-hero-app{max-height:190px}
+.mobile-hero-app{max-height:none}
 }
 
 /* Compact phone reading layout. Content expands naturally for larger text. */
@@ -513,39 +508,41 @@
 @media(max-width:700px){
 .phone-copy{display:inline}.wide-copy{display:none}
 .landing-page{--section-title:28px}
-.landing-page .section{padding-block:18px}
+.landing-page .section{padding-block:40px}
 .landing-page .section-label{margin-bottom:10px}
 .landing-page .section-heading{margin-bottom:12px}
 .landing-page .eyebrow{font-size:12px}
-#problem{padding-block:12px}
+#problem{padding-block:40px}
+#proof{padding-block:40px}
 #problem .problem-intro h2{font-size:25px;line-height:1.08}
 #problem .problem-intro p{font-size:13px;line-height:1.35;margin-top:9px}
 #problem .solution-note{margin:14px 0 18px}
 #problem .problem-heading{margin:18px 0 20px}
 #problem .problem-heading h2{font-size:22px;line-height:1.08}
-#problem .problem-story{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;align-items:stretch}
+#problem .problem-story{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:repeat(16,auto);gap:4px 10px;align-items:stretch}
 #problem .story-arrow{display:none}
-#problem .story-panel{padding:9px;border-radius:9px}
-#problem .story-toolbar{min-height:32px;padding:5px 9px;margin:-9px -9px 7px;gap:4px}
+#problem .story-panel{display:grid;grid-template-rows:subgrid;grid-row:1 / span 16;row-gap:4px;padding:12px;border-radius:9px}
+#problem .story-old{grid-column:1}
+#problem .story-new{grid-column:2}
+#problem .story-toolbar{min-height:42px;padding:8px 12px;margin:-12px -12px 12px;gap:4px}
 #problem .story-old .story-toolbar>span:last-child,#problem .story-new .record-state{display:none}
 #problem .story-toolbar .record-state{font-size:12px;white-space:normal}
 #problem .story-toolbar .brand-name{font-size:19px}
 #problem .story-toolbar .brand-symbol{width:20px;height:22px}
 #problem .story-toolbar .brand-tagline{display:none}
 #problem .story-kicker{font-size:12px;letter-spacing:.03em}
-#problem .story-quote{font-size:13px;line-height:1.18;margin:6px 0}
-#problem .story-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;align-items:stretch}
-#problem .story-flow span{font-size:11px;line-height:1.2;padding:4px;text-align:center;min-height:25px;display:grid;place-items:center}
-#problem .story-flow i{display:none}
+#problem .story-quote{font-size:13px;line-height:1.35;margin:12px 0}
+#problem .story-flow{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:subgrid;grid-row:4 / span 7;gap:4px;align-items:stretch}
+#problem .story-flow span{font-size:12px;line-height:1.3;padding:8px 5px;text-align:center;min-height:44px;display:grid;place-items:center;overflow-wrap:anywhere}
+#problem .story-flow i{display:block;text-align:center;font-size:0;line-height:1}
+#problem .story-flow i::after{content:"\2193";font-size:18px;line-height:1}
 #problem .story-panel p{font-size:12px;line-height:1.35;margin-top:8px}
 #problem .scan-line{gap:2px 14px}
 #problem .scan-line span{font-size:13px;line-height:1.4}
-#problem .story-keywords{display:grid;grid-template-columns:1fr;gap:3px}
-#problem .story-keywords span{font-size:11px;line-height:1.35}
+#problem .story-keywords{display:grid;grid-template-columns:1fr;grid-template-rows:subgrid;grid-row:11 / span 6;gap:4px;margin-top:12px}
+#problem .story-keywords span{display:block;font-size:12px;line-height:1.4}
+#problem .story-keywords span:not(:last-child)::after{content:none}
 #problem .story-old>p{display:none}
-#problem .paired-comparison{grid-column:1/-1;margin-top:0}
-#problem .paired-comparison span,#problem .paired-comparison strong{font-size:10px;line-height:1.25;padding:6px 7px}
-#problem .paired-comparison .paired-heading span{font-size:8px;letter-spacing:.04em}
 
 .product-section .product-heading{gap:8px;margin:30px 0 12px}
 .product-section .product-heading p{display:none}
@@ -579,7 +576,7 @@
 .plain-points{display:none}
 .diagram-intro{font-size:13px;line-height:1.35;margin:8px 0}
 .funding-diagram{gap:12px}
-#funding-context .demo-copy>p,.finance-body .diagram-intro{display:none}
+.finance-body .diagram-intro{display:none}
 .finance-body .record-topline{margin-bottom:10px}
 .funding-hub{padding:10px 12px;display:grid;grid-template-columns:1fr auto;gap:3px 10px;align-items:center}
 .funding-hub strong{grid-column:2;grid-row:1/4;font-size:29px;margin:0}
@@ -709,10 +706,10 @@
 .accountability-link{font-size:13px;gap:8px;margin-top:10px}
 
 /* Phone version: retain the full meaning through labels and headlines. */
-#why-matoc{padding-block:18px}
+#why-matoc{padding-block:40px}
 #why-matoc .section-heading{margin-bottom:14px}
 #why-matoc .section-heading h2{font-size:25px;line-height:1.05}
-#why-matoc>.container>.section-insight{font-size:12px;line-height:1.4;margin:0 0 10px}
+#why-matoc>.container>.section-insight{font-size:14px;line-height:1.5;margin:0 0 12px}
 #why-matoc .benefit-features{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:15px}
 #why-matoc .benefit-features article{padding-top:9px}
 #why-matoc .benefit-features .feature-index{font-size:8px;letter-spacing:0}
@@ -766,4 +763,81 @@
 .future-section .section-heading p{font-size:15px;margin-top:12px}
 .future-section .resource-links>a{padding:12px 14px}
 .future-section .resource-action{margin-top:0}
+}
+
+/* One typography style for the requested explanatory text at every viewport. */
+#problem .solution-label,
+#problem .solution-note p,
+#proof .section-head .section-insight,
+.product-section .product-heading>p,
+#panel-evidence>.section-insight,
+#funding-context .demo-copy .section-insight,
+#home-evidence-pathway>.section-insight,
+#home-workflow>.section-insight,
+#why-matoc>.container>.section-insight{
+font-family:var(--font-body);
+font-size:17px;
+font-weight:400;
+font-style:normal;
+line-height:1.5;
+letter-spacing:normal;
+text-transform:none;
+color:#6b7280;
+}
+.product-section .product-heading>p,
+#panel-evidence>.section-insight,
+#funding-context .demo-copy .section-insight,
+#home-evidence-pathway>.section-insight,
+#home-workflow>.section-insight{color:#a8bec9}
+#problem .solution-label{font-size:15px}
+
+@media(max-width:700px){
+.landing-page .hero{padding-bottom:40px}
+.product-section .product-heading>p{display:block;margin-top:8px}
+#problem .solution-label,
+#problem .solution-note p,
+#proof .section-head .section-insight,
+.product-section .product-heading>p,
+#panel-evidence>.section-insight,
+#funding-context .demo-copy .section-insight,
+#home-evidence-pathway>.section-insight,
+#home-workflow>.section-insight,
+#why-matoc>.container>.section-insight{font-size:14px}
+#problem .solution-label{font-size:12px}
+}
+
+/* Preserve the previous hero layout; only scale the app preview down 3%. */
+@media(min-width:1081px){
+ .hero-visual .programme-demo{transform:scale(.97);transform-origin:top right}
+}
+.outcome-hub .matched-result strong{font-size:42px;letter-spacing:-.035em}
+.outcome-hub .matched-result small{font-size:11px;letter-spacing:.05em}
+.context-node{padding:5px 6px;align-self:center;min-height:58px;width:100%;box-shadow:none}
+@media(max-width:700px){
+ .outcome-hub .matched-result strong{font-size:28px}
+ .outcome-hub .matched-result small{font-size:8px}
+ .context-node{min-height:52px;padding:4px 3px}
+}
+
+/* Reference hero: three-line headline, preview level with the eyebrow. */
+@media(min-width:1081px){
+ .hero-grid{align-items:start}
+ .hero h1 span{display:block}
+ .hero-visual{padding-top:0;margin-top:0}
+ .hero-caption-row .visual-caption{margin-left:calc(3% + 55px)}
+}
+@media(min-width:1081px) and (max-width:1190px){
+ .hero-caption-row .visual-caption{margin-left:calc(3% + 38.8px)}
+}
+
+/* Keep the preview and its caption together, independent of the left column. */
+.hero-app-frame{width:calc(100% - 56.7px);margin-left:auto;min-width:0}
+.hero-visual .hero-app-frame .programme-demo{width:100%;margin:0;transform:none}
+.hero-app-frame .visual-caption{margin:8px 0 0;line-height:1.4;align-items:baseline}
+@media(min-width:1081px){.hero-app-frame{transform:scale(.97);transform-origin:top right}}
+@media(min-width:1081px) and (max-width:1190px){.hero-app-frame{width:calc(100% - 40px)}}
+@media(max-width:1080px){.hero-app-frame{width:100%;transform:none}}
+@media(max-width:700px){
+ .hero-app-frame{display:none}
+ .landing-page .hero-visual{display:none}
 }

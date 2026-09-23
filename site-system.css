@@ -81,3 +81,7 @@ footer a{color:var(--mint)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+/* Shared directional link icon; no platform-dependent emoji rendering. */
+.link-arrow{display:inline-block;width:18px;height:18px;flex:0 0 18px;vertical-align:middle}
+.resource-action{display:inline-flex;align-items:center;gap:10px}

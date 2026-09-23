@@ -12,6 +12,8 @@
 .vision-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px}
 .vision-hero-actions .text-link{color:var(--mint)}
 .investor-preview{min-width:0}
+.investor-preview .vision-app-image{display:block;width:auto;max-width:100%;max-height:min(60vh,560px);height:auto;margin-inline:auto;border:1px solid #446574;border-radius:14px;box-shadow:0 24px 60px #0003}
+.investor-preview .programme-demo{display:none}
 .investor-preview .programme-screen{grid-template-columns:88px minmax(0,1fr)}
 .investor-preview .demo-evidence-record{display:none}
 .investor-preview .brand-name{font-size:20px}
@@ -35,7 +37,8 @@
 .opportunity-brand .brand-tagline{color:#527768;font-size:9px}
 .opportunity-brand .brand-symbol{width:28px;height:30px}
 .contrast-before .record-fragments span{background:#173747;color:#e2edf2;border:1px dashed #71828b}
-.contrast-before .record-fragments span:nth-child(2){transform:translateY(5px)}
+.contrast-before .record-fragments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.contrast-before .record-fragments span{display:grid;place-items:center;text-align:center;min-width:0;min-height:54px}
 #investment-case h2{max-width:980px}
 .investor-contrast .eyebrow{font-size:12px}
 .investor-contrast h3{font-size:26px;line-height:1.2;margin-top:17px}
@@ -151,6 +154,7 @@
 }
 
 @media(max-width:800px){.investor-hero-grid,.edge-layout,.business-layout{grid-template-columns:1fr;gap:32px}
+.investor-preview .vision-app-image{max-height:min(42vh,420px)}
 .vision-action-grid{grid-template-columns:1fr;gap:30px}
 .investor-hero{padding:40px 0}
 .investor-intro h1{font-size:48px}
@@ -221,4 +225,43 @@
 .trace-top{padding:18px}
 .trace-content{padding:20px}
 .trace-top>span:last-child{font-size:10px}
+}
+
+/* Compact Vision introduction: purpose on the left, supporting content on the right. */
+.investor-hero{padding:36px 0}
+.investor-hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:48px}
+.investor-intro h1{font-size:clamp(38px,3.7vw,52px);margin-top:18px}
+.vision-intro-detail{padding-top:36px;min-width:0}
+.vision-intro-detail>p{font-size:17px;line-height:1.6;color:#c1d4df}
+.vision-intro-detail .investor-benefits{margin:18px 0 22px}
+.vision-intro-detail .investor-status{font-size:12px;color:#9fbdc9;margin-top:14px}
+.vision-hero-actions{gap:12px}
+.vision-hero-actions .text-link{border:1px solid #628579;border-radius:8px;padding:12px 14px;background:transparent;color:#f5faf8}
+/* Equal-height tags share one baseline, including when their text wraps. */
+.investor-contrast .contrast-before .record-fragments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:9px}
+.investor-contrast .contrast-before .record-fragments>span{display:flex;align-items:center;justify-content:center;align-self:stretch;text-align:center;transform:none;margin:0;min-height:54px;line-height:1.4;padding:9px 10px}
+@media(max-width:800px){
+ .investor-hero{padding:36px 0}
+ .investor-hero-grid{grid-template-columns:1fr;gap:22px}
+ .vision-intro-detail{padding-top:0}
+ .vision-intro-detail>p{font-size:16px}
+ .investor-contrast .contrast-before .record-fragments>span{padding:8px 5px;font-size:12px}
+}
+
+/* The vision leads; the interactive demo follows. */
+.vision-intro-detail .vision-purpose{font-size:15px;line-height:1.6;color:#abc3ce;margin:14px 0 22px}
+.vision-principles{margin-top:32px;padding-top:24px;border-top:1px solid #34515b}
+.vision-principles>h2{font-size:13px;font-weight:650;letter-spacing:.09em;text-transform:uppercase;color:#abc3ce;margin:0 0 20px}
+.vision-principles-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;list-style:none;padding:0;margin:0}
+.vision-principles-grid li{min-width:0;border-left:2px solid #40af81;padding-left:16px}
+.vision-pillar-number{display:block;font-size:12px;color:#86b2a9;margin-bottom:8px}
+.vision-principles-grid h3{font-size:clamp(21px,2vw,27px);line-height:1.18;color:var(--mint);letter-spacing:-.025em}
+.vision-principles-grid p{font-size:15px;line-height:1.55;color:#c1d4df;margin-top:10px;max-width:36ch}
+@media(max-width:700px){
+ .vision-principles{margin-top:28px;padding-top:22px}
+ .vision-principles-grid{grid-template-columns:1fr;gap:22px}
+ .vision-principles-grid li{position:relative;padding-left:42px}
+ .vision-pillar-number{position:absolute;left:12px;top:4px;margin:0}
+ .vision-principles-grid h3{font-size:22px}
+ .vision-principles-grid p{font-size:14px;margin-top:6px;max-width:none}
 }
