@@ -37,6 +37,11 @@
 .simple-footer { background: #f6f8f7; color: #64736b; border-top: 1px solid #dfe7e2; font-size: 13px; }
 .simple-footer .container { flex-wrap: wrap; }
 .doc-body a { color: #096c51; text-decoration: underline; text-underline-offset: 3px; }
+/* Editorial emphasis: use bold text for the claims readers should retain. */
+.doc-body strong { font-weight: 750; color: #173f2e; }
+.doc-body p strong:first-child { color: #0b7655; }
+.doc-body li strong { color: #173f2e; }
+.doc-note strong { color: #173f2e; }
 @media(max-width:1150px) { .docs-layout { grid-template-columns: 220px minmax(0,1fr); gap: 32px; }.doc-toc { display: none; }.docs-sidebar { top: 128px; max-height: calc(100dvh - 128px); } }
 @media(max-width:760px) {
  .docs-layout { display: block; padding: 0 22px; }.docs-mobile { display: flex; align-items: center; gap: 20px; padding: 12px 22px; border-bottom: 1px solid #dce4df; font-size: 14px; }

@@ -154,3 +154,9 @@ body.reader-open { overflow:hidden; }
 @media(prefers-reduced-motion:reduce) { .reader-drawer[open] { animation:none; }.research-card,.research-card img { transition:none; } }
 @media print { .nav,.reading-actions,.simple-footer,.back-to-research,.article-rail,.related-reading { display:none!important; }.article-layout { display:block; }.article-body { font-size:12pt; }.article-cover img { height:150px; }.standalone-article { width:100%; padding:0; } }
 
+/* Make the central finding, qualification, and takeaway visible at a glance. */
+.research-page strong { font-weight: 750; color: #173f2e; }
+.research-page .dashboard-reading strong,
+.research-page .dashboard-source strong,
+.research-page .quick-summary strong,
+.research-page .article-hook strong { color: #0b7655; }
